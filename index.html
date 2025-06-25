@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Speed By Nancy</title>
+</head>
+<body>
+<main class="bg-gray-100 relative overflow-hidden min-h-screen">
+    <header class="h-20 flex items-center z-30 w-full bg-blue-600">
+        <div class="container mx-auto px-4 sm:px-6 flex items-center justify-between">
+            <div class="uppercase text-white font-bold text-2xl sm:text-3xl">
+                Speed By Nancy
+            </div>
+            <!-- Desktop Nav -->
+            <nav class="hidden lg:block">
+                <ul class="flex items-center space-x-4 sm:space-x-6 text-white uppercase text-base sm:text-lg">
+                    <li>
+                        <a href="#services" class="hover:text-yellow-300 transition">Services</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="hover:text-yellow-300 transition">About</a>
+                    </li>
+                    <li>
+                        <a href="#faq" class="hover:text-yellow-300 transition">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="hover:text-yellow-300 transition">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="hidden lg:flex items-center ml-4">
+                <button onclick="window.location.href='tel:+18555699328'" class="py-2 px-4 sm:px-6 bg-yellow-500 text-white rounded hover:bg-yellow-600 transition text-sm sm:text-base">
+                    Call Now
+                </button>
+            </div>
+            <!-- Mobile Hamburger -->
+            <div class="lg:hidden flex items-center">
+                <button id="mobile-menu-button" class="flex flex-col ml-2 focus:outline-none">
+                    <span class="w-6 h-1 bg-white mb-1 rounded"></span>
+                    <span class="w-6 h-1 bg-white mb-1 rounded"></span>
+                    <span class="w-6 h-1 bg-white mb-1 rounded"></span>
+                </button>
+            </div>
+        <!-- Mobile Nav -->
+        <script>
+            function toggleMobileMenu() {
+                const menu = document.getElementById('mobile-menu');
+                if (menu.classList.contains('scale-100')) {
+                    menu.classList.remove('scale-100');
+                    menu.classList.add('scale-0');
+                } else {
+                    menu.classList.remove('scale-0');
+                    menu.classList.add('scale-100');
+                }
+            }
+            document.getElementById('mobile-menu-button').onclick = toggleMobileMenu;
+        </script>
+        <style>
+            #mobile-menu {
+                transition: transform 0.3s;
+            }
+            #mobile-menu.scale-0 {
+                transform: scale(0);
+                pointer-events: none;
+            }
+            #mobile-menu.scale-100 {
+                transform: scale(1);
+                pointer-events: auto;
+            }
+        </style>
+    </header>
+    <div class="bg-gray-100">
+        <div class="container mx-auto px-4 sm:px-6 flex flex-col-reverse lg:flex-row items-center justify-between py-10 sm:py-16">
+            <div class="w-full lg:w-2/5 flex flex-col relative z-20 text-center lg:text-left mb-8 lg:mb-0">
+                <h2 class="font-bold uppercase text-4xl sm:text-5xl md:text-6xl text-blue-600 mb-4">
+                    Connect with Fast Internet & Speed By Nancy
+                </h2>
+                <p class="text-sm sm:text-base text-gray-800 mb-6">
+                    Experience ultra-fast, reliable internet and seamless connectivity for your home or business. Join Speed By Nancy and stay connected effortlessly. 1 (855)569-9328
+                </p>
+                <div class="flex justify-center lg:justify-start"></div>
+                </p>
+                <div class="flex justify-center lg:justify-start">
+                    <a href="tel:+18555699328" class="uppercase py-2 px-4 rounded-lg bg-yellow-500 text-white text-md hover:bg-yellow-400 transition">
+                        Call Now for Offers
+                    </a>
+                </div>
+            </div>
+            <div class="w-full lg:w-3/5 flex justify-center">
+                <img src="hero.png" class="w-48 sm:w-64 md:w-80 max-w-full m-auto" alt="Hero Image"/>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- About Section -->
+<section id="about" class="container mx-auto px-6 py-16 md:py-24">
+    <div class="relative flex flex-col lg:flex-row items-center bg-white rounded-xl shadow-lg overflow-hidden">
+        <div class="w-full lg:w-2/3">
+            <img class="w-full h-80 object-cover lg:h-full" src="about.png" alt="About My Speed By Nancy">
+        </div>
+        <div class="w-full lg:w-1/2 lg:absolute right-0 top-1/2 transform lg:-translate-y-1/2 bg-white p-8 md:p-12 lg:rounded-l-xl shadow-lg">
+            <div class="flex items-center space-x-2 text-sm font-bold text-blue-600 uppercase">
+                <span>About Us</span>
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold mt-4 mb-4 text-gray-800">Who We Are</h2>
+            <p class="text-gray-700 text-base leading-relaxed mb-6">
+                At Speed By Nancy, we are a certified JNA dealer committed to delivering fast, dependable internet, phone, and streaming services from leading providers. Our goal is to simplify your connectivity experience—offering clear guidance, personalized solutions, and prompt support for every customer. We handle all service requests with care, ensuring you enjoy seamless, worry-free connections at home or work.
+            </p>
+            <a href="tel:+18555699328">
+                <button class="py-2 px-6 rounded-lg bg-yellow-500 text-white font-bold text-sm hover:bg-yellow-600 transition">
+                    Call +1 (855)569-9328
+                </button>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<div id="services" class="max-w-screen-xl mx-auto py-8 px-4 lg:py-16 lg:px-6">
+    <div class="text-center mb-10">
+        <h2 class="text-4xl tracking-tight font-bold text-blue-600">Highlighted Services</h2>
+    </div>
+    <div class="flex flex-col md:flex-row">
+        <div class="mr-0 md:mr-8 mb-6 md:mb-0">
+            <img class="w-1/2 md:w-full mx-auto" src="services.png" alt="can_help_banner">
+        </div>
+        <div class="flex-1 flex flex-col sm:flex-row flex-wrap -mb-4 -mx-2">
+            <div class="w-full sm:w-1/2 mb-4 px-2">
+                <div class="h-full py-4 px-6 border border-blue-500 border-t-0 border-l-0 rounded-br-xl">
+                    <h3 class="text-2xl font-bold mb-6">High-Speed Internet</h3>
+                    <p class="text-sm">Enjoy blazing-fast, reliable internet for streaming, gaming, and working from home. Our internet plans are designed to keep you connected without interruptions.</p>
+                </div>
+            </div>
+            <div class="w-full sm:w-1/2 mb-4 px-2">
+                <div class="h-full py-4 px-6 border border-blue-500 border-t-0 border-l-0 rounded-br-xl">
+                    <h3 class="text-2xl font-bold mb-6">Crystal Clear Phone</h3>
+                    <p class="text-sm">Stay in touch with loved ones and colleagues using our affordable phone services, featuring unlimited nationwide calling and advanced voicemail options.</p>
+                </div>
+            </div>
+            <div class="w-full sm:w-1/2 mb-4 px-2">
+                <div class="h-full py-4 px-6 border border-blue-500 border-t-0 border-l-0 rounded-br-xl">
+                    <h3 class="text-2xl font-bold mb-6">Bundle & Save</h3>
+                    <p class="text-sm">Combine internet and phone services for extra savings and convenience. Our bundles are tailored to fit your needs and help you get the most value.</p>
+                </div>
+            </div>
+            <div class="w-full sm:w-1/2 mb-4 px-2">
+                <div class="h-full py-4 px-6 border border-blue-500 border-t-0 border-l-0 rounded-br-xl">
+                    <h3 class="text-2xl font-bold mb-6">Streaming Solutions</h3>
+                    <p class="text-sm">Access your favorite shows, movies, and live sports with our streaming-friendly internet and device support. Enjoy smooth, buffer-free entertainment anytime.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="pt-12 bg-gray-50 sm:pt-16">
+    <div class="px-4 mx-auto max-w-4xl sm:px-6 lg:px-8">
+        <div class="text-center">
+            <h2 class="mb-4 text-4xl font-bold leading-tight text-gray-900 sm:text-5xl">
+                Disclaimer
+            </h2>
+            <p class="max-w-2xl mx-auto px-6 text-lg text-gray-600 mb-8">
+                The information provided on this website is for general informational purposes only. Speed By Nancy makes no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability of the information, products, or services contained on this website. Any reliance you place on such information is therefore strictly at your own risk.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<div id="faq" class="py-4 bg-white">
+    <div class="max-w-screen-md mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-between">
+        <div class="text-center">
+            <p class="mt-4 text-sm leading-7 text-gray-500 font-regular">
+                F.A.Q
+            </p>
+            <h3 class="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-gray-900">
+                Frequently Asked <span class="text-blue-600">Questions</span>
+            </h3>
+        </div>
+        <div class="mt-20">
+            <ul class="space-y-8">
+                <li>
+                    <h4 class="text-lg font-semibold text-gray-800 mb-2">What services does Speed By Nancy offer?</h4>
+                    <p class="text-gray-700">
+                        Speed By Nancy provides a range of connectivity solutions, including high-speed internet, cellular plans, bundled packages, and streaming services. As a certified JNA dealer, we offer services from top providers, ensuring you have access to the best options for your home or business.
+                    </p>
+                </li>
+                <li>
+                    <h4 class="text-lg font-semibold text-gray-800 mb-2">What companies are serviceable through Speed By Nancy and JNA?</h4>
+                    <p class="text-gray-700">
+                        As a certified JNA dealer, Speed By Nancy offers services from leading companies, including:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700 ml-4">
+                        <li>AT&amp;T</li>
+                        <li>Verizon</li>
+                        <li>Spectrum</li>
+                        <li>Comcast Xfinity</li>
+                        <li>Frontier</li>
+                        <li>HughesNet</li>
+                        <li>CenturyLink</li>
+                        <li>...and many more</li>
+                    </ul>
+                    <p class="text-gray-700 mt-2">
+                        Through our partnerships, we ensure you have access to reliable and diverse service options.
+                    </p>
+                </li>
+                <li>
+                    <h4 class="text-lg font-semibold text-gray-800 mb-2">Is Speed By Nancy a service provider?</h4>
+                    <p class="text-gray-700">
+                        Speed By Nancy is an authorized dealer and certified retailer, but we are not a direct service provider. We work with leading service providers like those listed above to connect you to their offerings, ensuring you receive the best possible service.
+                    </p>
+                </li>
+                <li>
+                    <h4 class="text-lg font-semibold text-gray-800 mb-2">What are Speed By Nancy's execution charges?</h4>
+                    <p class="text-gray-700">
+                        Speed By Nancy charges for its execution services, which include setting up new connections, processing bill payments, plan upgrades, account cancellations, and other administrative tasks. These charges range from $49.99 to $199.99, depending on the service request, and are separate from the billing charges of the service providers you’re signed up with.
+                    </p>
+                </li>
+                <li>
+                    <h4 class="text-lg font-semibold text-gray-800 mb-2">Why are Speed By Nancy’s execution charges separate from my service provider’s billing?</h4>
+                    <p class="text-gray-700">
+                        As a separate entity, Speed By Nancy handles the execution of your service requests independently. Our charges cover the work required to manage and complete requests like plan upgrades, new installations, or account changes. These execution fees are distinct from your provider’s billing, which covers your actual internet, cellular, or streaming service.
+                    </p>
+                </li>
+                <li>
+                    <h4 class="text-lg font-semibold text-gray-800 mb-2">How do I contact Speed By Nancy for support?</h4>
+                    <p class="text-gray-700">
+                        You can reach out to our customer support team through the contact form on our website or by calling us directly on the assistance number provided below. Our team is available to assist you with any inquiries, service requests, or troubleshooting needs.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Section (anchor only, as no form exists) -->
+<div id="contact"></div>
+
+<div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+    <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="sm:col-span-2">
+            <a href="/" aria-label="Go home" title="Speed By Nancy" class="inline-flex items-center">
+                <svg class="w-8 text-blue-600" viewBox="0 0 24 24" stroke-linejoin="round" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor" fill="none">
+                    <rect x="3" y="1" width="7" height="12"></rect>
+                    <rect x="3" y="17" width="7" height="6"></rect>
+                    <rect x="14" y="1" width="7" height="6"></rect>
+                    <rect x="14" y="11" width="7" height="12"></rect>
+                </svg>
+                <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">Speed By Nancy</span>
+            </a>
+            <div class="mt-6 lg:max-w-sm">
+                <p class="text-sm text-gray-800">
+                    Speed By Nancy is a certified JNA dealer connecting homes and businesses with high-speed internet, phone, and streaming solutions from top providers. We make connectivity simple, reliable, and affordable.
+                </p>
+                <p class="mt-4 text-sm text-gray-800">
+                    Our team guides you through the best options and handles all service requests efficiently, so you can stay connected without hassle.
+                </p>
+            </div>
+        </div>
+        <div class="space-y-2 text-sm">
+            <p class="text-base font-bold tracking-wide text-gray-900">Contact</p>
+            <div class="flex">
+                <p class="mr-1 text-gray-800">Phone:</p>
+                <a href="tel:+18555699328" aria-label="Our phone" title="Our phone" class="transition-colors duration-300 text-blue-600 hover:text-blue-700">+1 (855)569-9328</a>
+            </div>
+        </div>
+        <div>
+            <p class="mt-4 text-sm text-gray-500">
+                Experience ultra-fast, reliable internet and seamless connectivity for your home or business.
+            </p>
+        </div>
+    </div>
+    <div class="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
+        <p class="text-sm text-gray-600">
+            © Copyright 2025 Speed By Nancy. All rights reserved.
+        </p>
+        <ul class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x
